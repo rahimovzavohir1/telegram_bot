@@ -9,9 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "repository": {
-    "type": "git",
+    "type": "",
     "url": "git+https://github.com/rahimovzavohir1/telegram_bot.git"
   },
   "bugs": {
@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/rahimovzavohir1/telegram_bot#readme",
   "dependencies": {
-    "node": "^22.21.0",
-    "telegram-bot-api": "^2.0.1"
+    "node-telegram-bot-api": "^0.66.0"
   }
 }
