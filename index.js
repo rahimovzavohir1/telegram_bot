@@ -5,9 +5,14 @@ const bot = new TelegramBot (TOKEN, {polling: true});
 
 bot.on("message", function(msg) {
     const chatId = msg.chat.id;
-    const firstname = msg.chat.id;
-    bot.sendMessage = msg.chat.first_name
-    bot.sentMessage(chatId, `Xush kelibsiz, ${firstname}`);
+    const text = msg.text;
+    const firstname = msg.chat.first_name;
+    if (text == "/start")
+    bot.sentMessage(chatId, `Xush kelibsiz, ${firstname}`,{
+        reply_markup: {
+
+        }
+    });
 });
 
 
