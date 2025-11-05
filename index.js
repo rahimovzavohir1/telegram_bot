@@ -28,8 +28,17 @@ bot.on("message", async function (msg) {
         🦅 Lamborghini Urus:
 
 Lamborghini Urus is a luxury high-performance SUV made by the Italian car manufacturer Lamborghini.
- It was first introduced in 2018 and is known as one of the fastest SUVs in the world.`
-      })
+ It was first introduced in 2018 and is known as one of the fastest SUVs in the world.`,
+ reply_markup: {
+  inline_keyboard: [ 
+    [
+      { text: "Rasmlar", callback_data: "photos"},
+      { text: "Batafsil", callback_data: "info"},
+    ],
+    [ { text: "Sotib olish", callback_data: "buy"} ],
+  ],
+ },
+      });
     })
     bot.sendMessage(chatId, "Boshlanyaptii....");
   } else if (text == "Menu 🥩") {
